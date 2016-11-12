@@ -1,0 +1,22 @@
+{
+  "name": "roman_numerals.js",
+  "version": "1.0.0",
+  "description": "Roman Numerals",
+  "main": "roman_numerals.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kwpolska/roman_numerals.git"
+  },
+  "author": "Chris Warrick",
+  "license": "BSD-3-Clause",
+  "bugs": {
+    "url": "https://github.com/Kwpolska/roman_numerals/issues"
+  },
+  "homepage": "https://github.com/Kwpolska/roman_numerals#readme",
+  "devDependencies": {
+    "jest": "^16.0.2"
+  }
+}
