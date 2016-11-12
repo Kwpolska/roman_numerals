@@ -1,0 +1,13 @@
+.DS_Store
+
+C/test_roman_numerals
+
+*.jar
+*.class
+
+JavaScript/node_modules
+
+.coverage
+.cache
+__pycache__
+*.py[cod]
