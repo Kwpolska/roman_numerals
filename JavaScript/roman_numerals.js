@@ -62,12 +62,13 @@ function fromRoman(roman) {
             nch = roman.charAt(i + 1);
         }
         // Is the next character higher in precedence (char is negative)?
+        var idx;
         try {
-            var idx = CHAR_PRECEDENCE[ch].indexOf(nch);
+            idx = CHAR_PRECEDENCE[ch].indexOf(nch);
         } catch (e) {
-            var idx = -1;
+            idx = -1;
         }
-        if (idx != -1) {
+        if (idx !== -1) {
             integer -= CHAR_VALUES[ch];
         } else {
             integer += CHAR_VALUES[ch];
