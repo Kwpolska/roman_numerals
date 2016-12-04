@@ -29,13 +29,13 @@ test("invalid numbers, toRoman", () => {
 test("all numbers, toRoman", () => {
     const romanNumerals = require("../roman_numerals");
     const fs = require("fs");
-    file = fs.readFileSync("../test_data.txt", {"encoding": "utf-8"});
-    lines = file.split("\n");
+    var file = fs.readFileSync("../test_data.txt", {"encoding": "utf-8"});
+    var lines = file.split("\n");
     for (var i = 0; i < lines.length; i++) {
-        t = lines[i].split(" ");
-        integer = parseInt(t[0]);
-        roman = t[1];
-        if (roman !== undefined && integer !== undefined) {
+        var t = lines[i].split(" ");
+        var integer = parseInt(t[0]);
+        var roman = t[1];
+        if (typeof roman !== "undefined" && typeof integer !== "undefined") {
             expect(romanNumerals.toRoman(integer)).toBe(roman);
         }
     }

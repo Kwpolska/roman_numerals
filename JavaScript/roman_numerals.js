@@ -40,13 +40,13 @@ var CHAR_VALUES = {
     "X": 10,
     "V": 5,
     "I": 1
-}
+};
 
-CHAR_PRECEDENCE = {
+var CHAR_PRECEDENCE = {
     "C": ["M", "D"],
     "X": ["C", "L"],
     "I": ["X", "V"]
-}
+};
 
 function fromRoman(roman) {
     var integer = 0;
@@ -56,7 +56,6 @@ function fromRoman(roman) {
     for (var i = 0; i < length; i++) {
         var ch = roman.charAt(i);
         var nch;
-        var idx;
         if (i === maxidx) {
             nch = null;
         } else {
@@ -64,9 +63,9 @@ function fromRoman(roman) {
         }
         // Is the next character higher in precedence (char is negative)?
         try {
-            idx = CHAR_PRECEDENCE[ch].indexOf(nch);
+            var idx = CHAR_PRECEDENCE[ch].indexOf(nch);
         } catch (e) {
-            idx = -1;
+            var idx = -1;
         }
         if (idx != -1) {
             integer -= CHAR_VALUES[ch];
@@ -97,20 +96,20 @@ function toRoman(integer) {
     }
 
     var r = {
-        "integer": integer,
+        integer,
         "roman": ""
     };
 
-    r = prepareGroup(r, 1000, 'M', 900, 'CM');
-    r = prepareGroup(r, 500, 'D', 400, 'CD');
-    r = prepareGroup(r, 100, 'C', 90, 'XC');
-    r = prepareGroup(r, 50, 'L', 40, 'XL');
-    r = prepareGroup(r, 10, 'X', 9, 'IX');
-    r = prepareGroup(r, 5, 'V', 4, 'IV');
-    r = prepareGroup(r, 1, 'I', null, null);
+    r = prepareGroup(r, 1000, "M", 900, "CM");
+    r = prepareGroup(r, 500, "D", 400, "CD");
+    r = prepareGroup(r, 100, "C", 90, "XC");
+    r = prepareGroup(r, 50, "L", 40, "XL");
+    r = prepareGroup(r, 10, "X", 9, "IX");
+    r = prepareGroup(r, 5, "V", 4, "IV");
+    r = prepareGroup(r, 1, "I", null, null);
 
     return r.roman;
 }
 
-exports = {'fromRoman': fromRoman, 'toRoman': toRoman};
+exports = {fromRoman, toRoman};
 module.exports = exports;
