@@ -32,7 +32,7 @@
  * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-CHAR_VALUES = {
+var CHAR_VALUES = {
     "M": 1000,
     "D": 500,
     "C": 100,
@@ -56,6 +56,7 @@ function fromRoman(roman) {
     for (var i = 0; i < length; i++) {
         var ch = roman.charAt(i);
         var nch;
+        var idx;
         if (i === maxidx) {
             nch = null;
         } else {
@@ -74,6 +75,19 @@ function fromRoman(roman) {
         }
     }
     return integer;
+}
+
+function prepareGroup(r, groupValue, groupLetter, lowerValue, lowerLetter) {
+    var count = Math.floor(r.integer / groupValue);
+    r.integer = r.integer % groupValue;
+    for (var i = 0; i < count; i++) {
+        r.roman += groupLetter;
+    }
+    if (lowerValue !== null && r.integer >= lowerValue) {
+        r.roman += lowerLetter;
+        r.integer -= lowerValue;
+    }
+    return r;
 }
 
 function toRoman(integer) {
@@ -97,20 +111,6 @@ function toRoman(integer) {
 
     return r.roman;
 }
-
-function prepareGroup(r, groupValue, groupLetter, lowerValue, lowerLetter) {
-    count = Math.floor(r.integer / groupValue);
-    r.integer = r.integer % groupValue;
-    for (var i = 0; i < count; i++) {
-        r.roman += groupLetter;
-    }
-    if (lowerValue !== null && r.integer >= lowerValue) {
-        r.roman += lowerLetter;
-        r.integer -= lowerValue;
-    }
-    return r;
-}
-
 
 exports = {'fromRoman': fromRoman, 'toRoman': toRoman};
 module.exports = exports;

@@ -36,11 +36,10 @@ package com.chriswarrick.roman_numerals;
 
 import java.util.Map;
 import java.util.HashMap;
-import java.util.ArrayList;
 
 public class RomanNumerals {
-    int integer;
-    StringBuilder roman;
+    private int integer;
+    private StringBuilder roman;
     private static final Map<Character, Integer> CHAR_VALUES;
     private static final Map<Character, String> CHAR_PRECEDENCE;
 
@@ -67,7 +66,7 @@ public class RomanNumerals {
         roman.ensureCapacity(16);
     }
 
-    void prepareGroup(int groupValue, char groupLetter, int lowerValue, char lowerLetter) {
+    private void prepareGroup(int groupValue, char groupLetter, int lowerValue, char lowerLetter) {
         int count = integer / groupValue;
         integer = integer % groupValue;
         for (int i = 0; i < count; i++) {
@@ -85,12 +84,13 @@ public class RomanNumerals {
         return roman.toString();
     }
 
-    public static int fromRoman(String roman) {
+    public static int fromRoman(String roman_) {
         int integer = 0;
-        roman = roman.trim().toUpperCase();
+        String roman = roman_.trim().toUpperCase();
         int length = roman.length();
         int maxidx = length - 1;
-        char ch, nch;
+        char ch;
+        char nch;
         for (int i = 0; i < length; i++) {
             ch = roman.charAt(i);
             if (i == maxidx) {
@@ -108,10 +108,10 @@ public class RomanNumerals {
         return integer;
     }
 
-    public static String toRoman(int integer) throws Exception {
+    public static String toRoman(int integer) {
         RomanNumerals r = new RomanNumerals(integer);
         if (integer < 1 || integer > 3999) {
-            throw new Exception("Integer must be between 1 and 3999");
+            throw new IllegalArgumentException("Integer must be between 1 and 3999");
         }
         r.prepareGroup(1000, 'M', 900, 'C');
         r.prepareGroup(500, 'D', 400, 'C');
