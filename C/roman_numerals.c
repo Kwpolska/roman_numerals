@@ -1,6 +1,6 @@
 /*
  * Roman Numeral Converter
- * Copyright © MMXVI, Chris Warrick.
+ * Copyright © MMXVI-MMXVII, Chris Warrick.
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
