@@ -16,6 +16,7 @@ This list might grow soon...
 * C
 * Java
 * JavaScript
+* Ruby
 
 Testing/compiling
 -----------------
@@ -23,10 +24,11 @@ Testing/compiling
 Run `make` either from the top directory or from a language directory.
 Requirements:
 
-* Python — py.test installed
+* Python — Python and py.test installed
 * C — a C compiler installed
 * Java — Java installed, `junit-4.12.jar` and `hamcrest-core-1.3.jar` in the Java folder
 * JavaScript — node and npm installed; npm dependencies (`jest`) installed
+* Ruby — Ruby installed
 
 Public API
 ----------
@@ -36,7 +38,8 @@ Each version has a slightly different public API.
 * Python: `to_roman(integer)` — `from_roman(roman)`
 * C: `int to_roman(int integer, char* roman)` (buffer of length 16) — `int from_roman(char* roman)`
 * Java: `String RomanNumerals.toRoman(int integer)` — `int RomanNumerals.fromRoman(String roman)`
-* JavaScript: `String toRoman(int integer)` — `int fromRoman(String roman)`
+* JavaScript: `toRoman(integer)` — `fromRoman(roman)`
+* Ruby: `to_roman(integer)` — `from_roman(roman)`
 
 License
 -------
