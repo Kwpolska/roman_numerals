@@ -17,6 +17,7 @@ This list might grow soon...
 * Java
 * JavaScript
 * Ruby
+* Swift
 
 Testing/compiling
 -----------------
@@ -29,6 +30,7 @@ Requirements:
 * Java — Java installed, `junit-4.12.jar` and `hamcrest-core-1.3.jar` in the Java folder
 * JavaScript — node and npm installed; npm dependencies (`jest`) installed
 * Ruby — Ruby installed
+* Swift — Xcode installed (good luck!); the included executable *might* work on a Mac. (Apple would prefer people not to write CLI apps in Swift.)
 
 Public API
 ----------
@@ -40,6 +42,7 @@ Each version has a slightly different public API.
 * Java: `String RomanNumerals.toRoman(int integer)` — `int RomanNumerals.fromRoman(String roman)`
 * JavaScript: `toRoman(integer)` — `fromRoman(roman)`
 * Ruby: `to_roman(integer)` — `from_roman(roman)`
+* Swift: `toRoman(integer: Int)` — `fromRoman(roman: String)`
 
 License
 -------

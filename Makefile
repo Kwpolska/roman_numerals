@@ -4,3 +4,4 @@ all:
 	cd Java && $(MAKE) test
 	cd JavaScript && $(MAKE) test
 	cd Ruby && $(MAKE) test
+	cd Swift && $(MAKE) test
