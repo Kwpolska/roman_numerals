@@ -18,6 +18,7 @@ This list might grow soon...
 * JavaScript
 * Ruby
 * Swift
+* Lua
 
 Testing/compiling
 -----------------
@@ -31,6 +32,7 @@ Requirements:
 * JavaScript — node and npm installed; npm dependencies (`jest`) installed
 * Ruby — Ruby installed
 * Swift — Xcode installed (good luck!); the included executable *might* work on a Mac. (Apple would prefer people not to write CLI apps in Swift.)
+* Lua — Lua installed
 
 Public API
 ----------
@@ -43,6 +45,7 @@ Each version has a slightly different public API.
 * JavaScript: `toRoman(integer)` — `fromRoman(roman)`
 * Ruby: `to_roman(integer)` — `from_roman(roman)`
 * Swift: `toRoman(integer: Int)` — `fromRoman(roman: String)`
+* Lua: `to_roman(integer)` — `from_roman(roman)`
 
 License
 -------
