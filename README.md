@@ -19,6 +19,7 @@ This list might grow soon...
 * Ruby
 * Swift
 * Lua
+* C#
 
 Testing/compiling
 -----------------
@@ -33,6 +34,7 @@ Requirements:
 * Ruby — Ruby installed
 * Swift — Xcode installed (good luck!); the included executable *might* work on a Mac. (Apple would prefer people not to write CLI apps in Swift.)
 * Lua — Lua installed
+* C# — Visual Studio and the appropriate C# runtimes installed
 
 Public API
 ----------
@@ -46,6 +48,7 @@ Each version has a slightly different public API.
 * Ruby: `to_roman(integer)` — `from_roman(roman)`
 * Swift: `toRoman(integer: Int)` — `fromRoman(roman: String)`
 * Lua: `to_roman(integer)` — `from_roman(roman)`
+* C#: `string RomanNumerals.ToRoman(int integer)` — `int RomanNumerals.FromRoman(string roman)`
 
 License
 -------
