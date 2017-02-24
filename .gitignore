@@ -37,3 +37,6 @@ xcuserdata/
 timeline.xctimeline
 playground.xcworkspace
 
+# Lua
+luaunit.lua
+

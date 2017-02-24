@@ -33,7 +33,7 @@ Requirements:
 * JavaScript — node and npm installed; npm dependencies (`jest`) installed
 * Ruby — Ruby installed
 * Swift — Xcode installed (good luck!); the included executable *might* work on a Mac. (Apple would prefer people not to write CLI apps in Swift.)
-* Lua — Lua installed
+* Lua — Lua installed; download [LuaUnit](https://github.com/bluebird75/luaunit/blob/master/luaunit.lua) manually and place in the `Lua/` directory
 * C# — Visual Studio and the appropriate C# runtimes installed
 
 Public API
