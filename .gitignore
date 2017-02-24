@@ -1,13 +1,39 @@
+# 
 .DS_Store
 
+# C
 C/test_roman_numerals
 
+# Java
 *.jar
 *.class
 
+# JavaScript
 JavaScript/node_modules
 
+# Python
 .coverage
 .cache
 __pycache__
 *.py[cod]
+
+# Swift
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
+*.hmap
+*.ipa
+*.dSYM.zip
+*.dSYM
+timeline.xctimeline
+playground.xcworkspace
+
