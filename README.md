@@ -12,14 +12,17 @@ Supported Languages
 
 This list might grow soon...
 
-* Python (2 and 3)
+* Python (2 and 3) — reference implementation
 * C
 * Java
 * JavaScript
 * Ruby
 * Swift
 * Lua
-* C#
+* C# — or basically the Java version with capital letters sprinkled on top
+* Go
+
+(Most implementations started their life as a copy of the `.py` file, or with the `.py` file side-by-side.)
 
 Testing/compiling
 -----------------
@@ -32,9 +35,10 @@ Requirements:
 * Java — Java installed, `junit-4.12.jar` and `hamcrest-core-1.3.jar` in the Java folder
 * JavaScript — node and npm installed; npm dependencies (`jest`) installed
 * Ruby — Ruby installed
-* Swift — Xcode installed (good luck!); the included executable *might* work on a Mac. (Apple would prefer people not to write CLI apps in Swift.)
+* Swift — Xcode installed; the included executable *might* work on a Mac — good luck! Apple would prefer people not to write CLI apps in Swift; their testing thing does not work.
 * Lua — Lua installed; download [LuaUnit](https://github.com/bluebird75/luaunit/blob/master/luaunit.lua) manually and place in the `Lua/` directory
-* C# — Visual Studio and the appropriate C# runtimes installed
+* C# — Visual Studio and the appropriate C# runtimes installed (make unavailable)
+* Go — Go installed
 
 Public API
 ----------
@@ -49,6 +53,7 @@ Each version has a slightly different public API.
 * Swift: `toRoman(integer: Int)` — `fromRoman(roman: String)`
 * Lua: `to_roman(integer)` — `from_roman(roman)`
 * C#: `string RomanNumerals.ToRoman(int integer)` — `int RomanNumerals.FromRoman(string roman)`
+* Go: `ToRoman(integer int) (string, error)` — `FromRoman(roman string) int`
 
 License
 -------

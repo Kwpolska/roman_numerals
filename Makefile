@@ -5,3 +5,4 @@ all:
 	cd JavaScript && $(MAKE) test
 	cd Ruby && $(MAKE) test
 	cd Swift && $(MAKE) test
+	cd Go && $(MAKE) test
