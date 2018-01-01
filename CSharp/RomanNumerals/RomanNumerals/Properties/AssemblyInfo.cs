@@ -11,7 +11,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Chris Warrick")]
 [assembly: AssemblyProduct("RomanNumerals")]
-[assembly: AssemblyCopyright("Copyright © MMXVI-MMXVII, Chris Warrick")]
+[assembly: AssemblyCopyright("Copyright © MMXVI-MMXVIII, Chris Warrick")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

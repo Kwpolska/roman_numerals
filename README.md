@@ -58,7 +58,7 @@ Each version has a slightly different public API.
 License
 -------
 
-Copyright © MMXVI-MMXVII, Chris Warrick.
+Copyright © MMXVI-MMXVIII, Chris Warrick.
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without

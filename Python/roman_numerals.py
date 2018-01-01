@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 # Roman Numeral Converter
-# Copyright © MMXVI-MMXVII, Chris Warrick.
+# Copyright © MMXVI-MMXVIII, Chris Warrick.
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without

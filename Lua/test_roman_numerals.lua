@@ -1,5 +1,5 @@
 -- Test Suite for Roman Numeral Converter
--- Copyright © MMXVI-MMXVII, Chris Warrick.
+-- Copyright © MMXVI-MMXVIII, Chris Warrick.
 -- All rights reserved.
 -- License: 3-clause BSD, see main file for details.
 
